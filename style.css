@@ -60,6 +60,7 @@ url('cloud.jpg');
 .nav__logo-box {
 margin:20px;
 /*background-color: blue;*/
+padding: 10px;
 }
 
 .nav__box{
@@ -74,7 +75,7 @@ h1{
  font-family: 'Permanent Marker', cursive;
  font-weight: 400;
 /* top: 20px;*/
- color: #rgb(14, 1, 75);/*#e0fdc9;*/
+ color: rgb(14, 1, 75);/*#e0fdc9;*/
  letter-spacing: 5px;
 }
 
@@ -186,15 +187,19 @@ a:link, a:visited {
   
   height: 100vh;
   background-color: lightskyblue;
-  
+  position: relative;
   
 }
 
 .container__cards{
+  background-color: lime;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  height: 100%;
+  top:50%;
+  left:50%;
+  width: 80%;
+  transform: translate(-50%,-50%);
   justify-content: space-around;
   align-items: center;
 }  
@@ -203,6 +208,7 @@ a:link, a:visited {
   width: 300px;
   background-color:rgb(230, 232, 238);
   padding: 20px;
+  margin: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
@@ -214,6 +220,9 @@ a:link, a:visited {
 .container__cards--international {
   height: 300px;
   width: 300px;
+  margin: 10px;
+
+
   padding: 0;
   background-color: rgb(230, 232, 238);
   padding: 20px;
