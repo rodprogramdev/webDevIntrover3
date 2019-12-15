@@ -1,7 +1,9 @@
 /*project design 
 colors 1: #90EE90,RGBA(144, 238, 144, 1)
 color 2: Hex: #FFCF79,RGBA(255, 207, 121, 1)
-
+primary: #3399FF
+text: #F3EFE0,RGB: 243, 239, 224
+Footer #9A3334
 */
 
 
@@ -154,7 +156,7 @@ a:link, a:visited {
   left:50%;
   transform:translate(-50%,-50%);
   padding: 30px;
-  color: rgb(14, 1, 75);/*rgb(58, 66, 11);rgb(44, 11, 11);*/
+  color:rgba( 154, 51, 52);/*rgba(15, 1, 75, 0.582);/*rgb(58, 66, 11);rgb(44, 11, 11);*/
   text-align: center;
 }
 
@@ -192,7 +194,7 @@ a:link, a:visited {
 }
 
 .container__cards{
-  /*background-color: lime;*/
+ /* background-color: lime;*/
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -203,7 +205,11 @@ a:link, a:visited {
   justify-content: space-around;
   align-items: center;
 }  
+h2{
+  text-align: center;
+}
 .container__cards--local{
+  border-radius: 10px;
   height: 300px;
   width: 300px;
   background-color:rgb(230, 232, 238);
@@ -218,6 +224,8 @@ a:link, a:visited {
 }
 
 .container__cards--international {
+  border-radius: 10px;
+
   height: 300px;
   width: 300px;
   margin: 10px;
@@ -236,17 +244,17 @@ a:link, a:visited {
 
 }
 .footer {
-  font-size: 40px;
+  font-size: 35px;
   text-align: center;
   padding: 20px;
-  background-color: #7D4427;
+  background-color: #9A3334; /*#7D4427;*/
   height: 100px;
-  color: white;
-
+  color: #F3EFE0;
+/*https://www.colorcombos.com/color-schemes/20/ColorCombo20.html*/
 
 }
 
 .credits {
-  font-size:20px;
+  font-size:15px;
   padding:0;
 }
