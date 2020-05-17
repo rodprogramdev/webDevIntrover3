@@ -6,6 +6,13 @@ text: #F3EFE0,RGB: 243, 239, 224
 Footer #9A3334
 */
 
+/*Color Variables
+Header
+  nav__box box-shadow: --navbox-box-shadow
+About
+Cards
+
+*/
 
 /*Universal Selectors*/
 
@@ -36,7 +43,7 @@ rgba(76, 180, 245, 0.863), Hex: #4CB5F5
 rgba(52, 103, 92, 0)),*/
 url('2076.jpg');
 background-color: #fff;
-  background-position: bottom;
+  background-position: center;
   position: relative;
   
 /*
@@ -54,6 +61,7 @@ background-color: #fff;
  left:0;
  width:100%;
  background-color:rgba(51, 80, 129, 0.308);
+ 
 }
 .nav__container{
   display: flex;
@@ -62,49 +70,59 @@ background-color: #fff;
   justify-content:space-between;/*use to control how the items can be controlled in the main axis*/
   
 }
+/*
 .nav__logo-box {
 margin:20px;
-/*background-color: blue;*/
+/*background-color: blue;
 padding: 10px;
 
-}
+}*/
 
 .nav__box{
-  
-margin:20px 20px 20px 30px;
-border-radius: 5px;
-box-shadow: 0 2px 2px 2px;
-background-color: rgba(191, 154, 114, 0.534); /*rgba(51, 153, 204, 0.863);*/
-}
+margin:20px 20px 20px 50px;
+border-radius: 3px;
+box-shadow: 0 0px 1px 1px  #ccc; /*0 2px 2px 2px*/
+background-color: rgba(33, 149, 243, 0.37);/*rgba(172, 128, 90, 0.733);/*background-color: rgba(160, 150, 139, 0.534); /*rgba(51, 153, 204, 0.863);*/
 
+}
+/*
 .sample-logo{
  height: 30px;
- /*font-family: 'Lobster', cursive;*/
+ /*font-family: 'Lobster', cursive;
  font-family: 'Permanent Marker', cursive;
  font-weight: 400;
-/* top: 20px;*/
+/* top: 20px;
   font-size: 20px;
   text-shadow: 2px 2px 3px rgb(236, 208, 208), 0 0 5px rgb(11, 11, 218);
  color: rgb(230, 232, 238);/*#e0fdc9;*/
- letter-spacing: 10px;
-}
+ /*letter-spacing: 10px;*/
+/*}*/
 
 .nav ul {
   font-size:16px;
-  letter-spacing: 8px;
+  letter-spacing: 10px;
   list-style-type:none;
-  
+  font-weight: 600; 
  
 }
 
-
-
 .nav ul li{
-  padding: 10px 10px 10px 5px;
+  padding: 10px 5px 10px 10px;
   float:left;
   
 }
 
+
+
+a{
+  font-size: 12px;
+  transition: all .2s;
+}
+
+a:hover{
+  font-size: 20px;
+  
+}
 
 
 a:link, a:visited {
@@ -112,6 +130,72 @@ a:link, a:visited {
   text-decoration: none;
   cursor: pointer;
 }
+
+/*SEARCH BOX
+https://www.w3schools.com/howto/howto_css_search_button.asp
+https://electrictoolbox.com/css3-rounded-corner-input/
+*/
+.nav__search-box{
+  padding-top: 27px;
+  padding-right: 70px;
+}
+
+input.rounded{
+  border: 2px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 5px 0px 0px 5px;
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 15px;
+	padding: 5px 4px;
+	outline: 0;
+  -webkit-appearance: none;
+  float: left;
+  width: 80%;
+}
+
+input.rounded:focus {
+	border-color: #0515f3c4;/*#a9d826*/
+}
+
+/*form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}*/
+
+form.nav__form button {
+  float: left;
+  width: 20%;
+  padding:  3.5px 3px; /*4px 7px;*/
+  background: rgba(33, 149, 243, 0.589);/*#2196F3;*/
+  color: white;
+  font-size: 17px;
+  border: 2px solid ccc;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 2px 2px 3px #666;
+
+}
+
+form.nav__form button:hover {
+  background: #0b7dda;
+}
+
+form.nav__form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 
 
 .text-box{
@@ -128,7 +212,6 @@ a:link, a:visited {
 .primary-header {
   color: rgb(230, 232, 238);/*#333333;*/
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
-
   font-family: 'Bebas Neue', cursive;
   
 }
@@ -147,6 +230,61 @@ a:link, a:visited {
   letter-spacing: 7px;
 /*background-color:green;*/
 }
+
+
+/*
+Sample-image
+*/
+
+.sample-image{
+  position: absolute;
+  height: 100%;
+  top: 100px;
+  left:30px;
+  /*border-radius: 50%;*/
+  
+}
+
+.my-small-photo{
+  height:100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: -2px -1px 25px rgb(252, 252, 252);
+  transition: all .2s ease-in-out;
+}
+
+.my-small-photo:hover{
+   height: 150px;
+   width: 150px;
+   border-color: peachpuff;
+   cursor:pointer;
+}
+
+.my-large-photo{
+  height: 300px;
+  width: 300px;
+}
+
+.thin-black-border{
+  /*
+  border-color: rgb(8, 8, 6);
+  border-width: 5px;
+  border-style:solid;*/
+  border: solid 5px rgb(8,8,6);
+}
+
+/*multiple classes
+#try-multiple .callout{
+  
+  height: 20px;
+  width: 20px;
+  background-color: peachpuff;
+  color:orangered;
+}*/
+
+
+
+/*section about*/
 
 .section__about{
 /*  background-color: lightgreen;
@@ -175,10 +313,10 @@ a:link, a:visited {
   
 }
 .about-h2{
-  color:  #1458c7;/*#6db9d5;/*rgba(15, 1, 75, 0.582);/*rgb(58, 66, 11);rgb(44, 11, 11);*/
+  color:  #1459c7fa;/*#1458c7;/*#6db9d5;/*rgba(15, 1, 75, 0.582);/*rgb(58, 66, 11);rgb(44, 11, 11);*/
   text-align: center;
   font-size: 70px;
-  text-shadow: 0 0 3px #FF0000;
+  text-shadow: 0 5px 5px #ccc;/*0 0 3px #FF0000;*/
   border:solid;
   border-radius: 10px;
 }
@@ -202,8 +340,150 @@ a:link, a:visited {
    position: relative;
  }
 
+/*RADIO GROUP ABOUT SECTION*/
+.form__radio-group{
+  /*we can use float here but we can just set the display property to inline-block so that they will 
+  not create the line-breaks and will be displayed side by side.*/
+  /*float:left; show this to give them the idea that this will also work*/
+  width: 49%;/*50% will not work for displaying them side by side, try to reduce this to 49% in the developers
+  tools. Tell them that we prefer this over using float*/
+  display: inline-block;
+  
+
+}
+
+.form__radio-input{
+  /*opacity:0;*/
+  display: none;
+}
+
+.form__radio-label{
+  /*here we used the default font-size which is 1.6rem in value and we changd the pointer with a hand so that
+  it would look like a link.*/
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative; /*parent element of radio button*/
+  padding-left: 4rem; /*5rem then try to decrease it*/
+}
+
+/*STEPS:
+  so that we can give it the border and give it a border-radious of 50% 
+  to make it totally round.
+  You would see that it is not workign because we should make it a block element.
+  Remember that this properties will only work if you give it a block or inline block element. 
+  You would see that they actually occupied a line. SO the probable better option for this is the
+  Inline block instead of the block element.
+
+  We can see that its difficult to positon in the label element so lets use the ABSOLUTE positioning to put
+  it exactly where we want it to be. 
+  Just remember that in order for this to work you will need to make the parent relative. So the parent 
+  element in this case is the radio element LABEL.
+
+  From here we should be able to position it. Give the left: 0; We are not really sure so we can start at top:0; 
+  as well and then we can just adjust as we go. We can see that it looks a bit weird.
+  The problem now is that they overlapped because the text starts at the beginning of the element and so does the 
+new button. 
+
+So lets just give it some padding on the left side so that it will put the text where we want it to be.
+We can give it some padding from the top because we saw that it was not well aligned. 
+
+  Now lets take care of the inner side 
+  We can do that in the after pseudo element.
+  */
+  
+  
+  /*This will contain two parts the green border outside and inside which is the solid circle dot
+  that will be a differnet element. In that we we can have an empty element or the selected button from where
+  we simply display the green part in the middle. 
+
+  the height and the width are given both 30px so that they can form a circle. 
+  */
+.form__radio-button{
+  
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #1459c7fa;/* #032A49;*/
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left:0;
+  top: -.4rem; /*start with 0 to -.1rem to -.2rem and then Use developer tool to make this to -.4rem*/
+}
+  
 
 
+/*instead of creating a new element inside of the html we will use the pseudo element ::after{}
+remember that each time we use pseudo element we need to specify its content property.
+We can set it to empty content:"";
+We also need to use the display property, we can set it to block.
+So we want it to be a circle so we use the border-radious property: 50%;
+
+We want this to be positioned exactly in the center of the outer cicle. So we can use our 
+old trick for absolute positioning. It is actually already set but it doesn't have to be relative
+it just have to be specified. 
+
+Next we specify top: 50%, left:50%; and the old translate trick -50%,-50%
+Add the background color
+Now we have to hide this dots and make the circle empty and move them a little to the top. 
+We can do this by using the property opacity: 0
+
+The magic here is that everytime that we click on the button here, we need to make the dot appear in the middle. 
+
+This basically means to put the opacity of the after pseudo element to 1.
+
+What we can do is to use another pseudo class which is called CHECKED and that pseudo class is available on all
+of the radio buttons which are as you can see in our original radio button is checked. WE can see
+in the input original radio button is that it has the CHECKED pseudo class. We can use that in our advantage.
+
+*/
+
+.form__radio-button::after{
+  content:"";
+  border-radius: 50%;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #1459c7fa;/*#032A49*/
+  opacity: 0;
+  transition: opacity .2s ;
+
+}
+/*
+here we have all of the input element selected and they are checked. What we want to manipulate is not the 
+radio input but instead the radio button.
+
+The thing is that the span element is not the direct child of the radio-input element. Here we can use the SIBLING
+SELECTOR to first the LABEL and from there we can select the CHILD element the radio button element. 
+
+So we can select the sibling and we use the ADJACENT SIBLING +, because it is a direct sibling but  we can also use the 
+~ character and it will work just the same way. 
+
+Select the radio-label which is the sibling and then select the radio button which is the child of this element. 
+This is quite a huge selector but it is all pretty logical
+
+You just need to wrap the concept or head around the logic that is going on here.
+
+Let me try to explain the logic here:
+- As soon as we hit the label element the radio input becomes checked. We can see that we have the checked pseudo class
+available for us and what we do next.
+- Is to simply select the sibling of that element which is the radio label and then the child which is the radio button
+because that is the one that we want to change each time that the radio input is selected.
+- What we want to do is to give it an opacity of 1.
+- Now we should add the transition in the radio-buttionafter::after selector.
+- The only one we need to manipulate is the opacity so we need to write it down into transition: opacity .2s;
+
+*/
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+
+}
+
+
+  
 /*
 .about-h2{
   background-image:linear-gradient(to right bottom,
@@ -214,7 +494,7 @@ a:link, a:visited {
 }
 */
 
-
+/*SECTION CARDS*/
 .section__cards{
   
   height: 100vh;
@@ -273,6 +553,7 @@ h2{
   margin: 50px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  position: relative;
 
 }
 
@@ -286,12 +567,9 @@ h2{
 
 .container__cards--international {
   border-radius: 10px;
-
   height: 300px;
   width: 300px;
   margin: 50px;
-
-
   padding: 0;
   background-color: rgba(255, 255, 255, 0.822);
   padding: 20px;
@@ -304,10 +582,22 @@ h2{
 }
 
 .container__cards--international:hover{
-  
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-
 }
+/*
+.featured{
+  font-size: 12px;
+  height: 70vh;
+  position: relative;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  margin: 200px;
+  padding: 20px;
+  width:100%;
+  background-color: orangered;
+  display: inline-block;
+}*/
 
 .mySlides{
   display:none;
@@ -417,29 +707,62 @@ img {
 padding: 10px 0 0 0;}
 .services{
   display:block;
+  
 }
 .footer__container{
   position: relative;
   display: flex;
   align-items: center;
+  
   }
 .footer__copyright{
-  padding: 70px 0 0 0;
+  padding: 30px 0 0 0;
   position: absolute;
   left:50%;
   top:95%;
   transform:translateX(-50%);
+  overflow:hidden;
 }
 
-hr{
-  width: 1200px;
+.footer__paragraph{
+  font-size: 12px;
+  margin: 0;
+}
+
+.footer-hr1{
+  width: 1000px;
+ 
+}
+
+.footer-hr2{
+  width: 800px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%);
+
 }
 
 .credits a {
   position: absolute;
-  margin: 90px  0 0 0;
+  margin: 100px  0 0 0;
   font-size:15px;
   color: #F3EFE0;
   left:50%;
   transform:translateX(-50%);
 }
+
+/*Lesson 07
+Creating a list
+Understanding how to create a bulleted unordered list
+Understanding how to creat an ordered list
+Using the float element
+Making Dead Links using the hash symbol
+Adding Images to your website
+Turning an image to a link
+Adding a background image to our header section
+Linking to External pages with Anchor Elements
+Linking to Internal Section of a page with Anchor Elemenets
+nesting an Anchor Eleement within a paragraph.
+
+*/
