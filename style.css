@@ -41,7 +41,7 @@ height: 100vh;
 background-image: /*linear-gradient(to right bottom,
 rgba(76, 180, 245, 0.863), Hex: #4CB5F5
 rgba(52, 103, 92, 0)),*/
-url('2076.jpg');
+url('images/2076.jpg');
 background-color: #fff;
   background-position: center;
   position: relative;
@@ -326,7 +326,7 @@ Sample-image
    background-image: /*linear-gradient(to right bottom,
    rgba(224, 235, 224, 0.774), 
    rgba(255, 207, 121, 0.3)),*/
-   url("clifordMervil.jpg");/*#CDB99C;Photo by Cliford Mervil from Pexels*/
+   url("images/clifordMervil.jpg");/*#CDB99C;Photo by Cliford Mervil from Pexels*/
 
    /* Set a specific height */
    min-height: 750px; 
